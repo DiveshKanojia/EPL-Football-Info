@@ -1,0 +1,1014 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   1. CSS Reset Code
+========================================================================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+
+sub { bottom: -.25em; }
+
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+
+.futura-bold-font {
+  font-family: 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* ==========================================================================
+   Common Code
+========================================================================== */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   CSS Styling For Login Form
+========================================================================== */
+
+body.login {
+  background: url(/assets/image/EPL-login-backgorund.jpg);
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Section is styled here */
+.login-section {
+  max-width: 350px;
+  width: 350px;
+  height: 420px;
+  padding: 70px 30px;
+  background-color: #000000;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+/* header h1 is styled here */
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+/* paragraph is styled here */
+.login-section p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* entire input box is styled here */
+.login-section input {
+  width: 100%;
+}
+
+.login-section .wrapper div {
+  padding-bottom: 20px;
+}
+
+/* username and password input box is styled here  */
+.login-section input[type = "text"], input[type = "password"] {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* submit button is styled here */
+.login-section input[type = "submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #FF005C;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 20px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.login-section input[type = "submit"]:hover {
+  cursor: pointer;
+  background-color: #ff005dd3;
+  color: #ffffff;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* error message is styled here */
+.err-msg-1,.err-msg-2 {
+  display: none;
+  color: #fb2525;
+  font-size: 15px;
+}
+
+.err-msg-show {
+  display: block;
+}
+
+/* ==========================================================================
+   CSS Styling For Login Form Ended Here.
+========================================================================== */
+
+
+/* ==========================================================================
+   CSS Styling For Home Page
+========================================================================== */
+
+/* home header */
+body {
+  background-color:   #f2f2f2;
+}
+
+.home header {
+  /* linear gradient is you to give a shadow effect to an img */
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, .7)),to(rgba(0, 0, 0, .7))), url(/assets/image/backgournd-imgae-home.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .7)), url(/assets/image/backgournd-imgae-home.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .7)), url(/assets/image/backgournd-imgae-home.jpg); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+}
+
+.epl-logo {
+  float: left;
+}
+.navigation {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation .hamburger-menu {
+  display: none;
+}
+
+.epl-logo .logo {
+  height: 100px;
+  width: auto;
+  margin-top: 20px;
+  
+}
+
+.hero-text-box {                
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  /* transform property is you to scale the element with respect to x and y */
+  -webkit-transform: translate(-50%,-10%);
+      -ms-transform: translate(-50%,-10%);
+          transform: translate(-50%,-10%);   
+}
+
+.hero-text-box h2 {
+  font-size: 60px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.hero-text-box h2 span {
+  display: block;
+}
+
+/* Main navi */
+.main-nav {
+  /* use to remove the bullets point in an un-order list */
+  list-style: none;  
+  margin-top: 55px;
+}
+
+.main-nav li {
+  /* use to place the element side by side and remove the block element*/
+  display: inline-block; 
+  margin-left: 25px;  
+}
+
+.main-nav .active a, .main-nav .not-active a, .main-nav .logout-btn a{
+  text-decoration: none;
+  padding: 8px 0;
+  color: #ffffff;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.main-nav .active a {
+  color: #fb2525;
+  border-bottom: 3px solid #fb2525;
+}
+
+.main-nav a:hover {
+  color: #fb2525;
+  border-bottom: 3px solid #fb2525;
+}
+/* Main Navi Ends */
+
+
+/* Home Main */
+/* Section Records */
+.records {
+  padding: 40px 0;
+  color: #300034;
+}
+.records h3, .club-team-result h3,  .match-details-result h3{
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.records h3::after, .club-team-result h3::after,  .match-details-result h3::after {
+  display: block;
+  height: 4px;
+  background-color:#300034;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.records h3 span {
+  text-transform: uppercase;
+}
+.manchester-united, .most-goal-scorer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+.manchester-united-image,.manchester-united-stats,.most-goal-scorer-image,.most-goal-scorer-stats{
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.manchester-united-stats, .most-goal-scorer-stats{
+  border-left: 4px solid #300034;
+}
+.manchester-united-stats ul {
+  padding: 100px 0;
+  list-style: none; 
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.manchester-united-image img, .most-goal-scorer-image img {
+  width: 60%;
+  padding: 0 50px;
+}
+.most-goal-scorer-image {
+  flex-direction: column;
+}
+
+.most-goal-scorer-image span {
+  margin: 20px 0 0 ;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.most-goal-scorer-stats p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* Section Records Ends*/
+
+/* Section History */
+.history {
+  color: #300034;
+}
+
+.history h4 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #300034;
+}
+
+.history p span {
+  font-size: 18px;
+  display: block;
+  padding-bottom: 20px;
+  line-height: 22px;
+}
+
+.history p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+/* Section History Ends*/
+/* Home Main Ends*/
+
+/* Home Footer */
+footer {
+  background-color:#FF005C;
+  color: #300034;
+}
+.footer-first-part, .footer-first-part .footer-navigation{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-navigation {
+  -webkit-box-flex: 49%;
+      -ms-flex: 49%;
+          flex: 49%;
+}
+
+.footer-navigation h3 {
+  -webkit-box-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+}
+.footer-navigation .footer-main-nav{
+  -webkit-box-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.footer-navigation .epl-logo-footer-black a img {
+  width: 200px;
+}
+
+/* Footer Main Nav */
+.footer-main-nav {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  align-items: center;
+}
+.footer-main-nav li a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #300034;
+  text-transform: capitalize;
+}
+
+.footer-main-nav .active a, .footer-main-nav .not-active a, .footer-main-nav .logout-btn a{
+  padding: 8px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: border-bottom .2s;
+  -o-transition: border-bottom .2s;
+  transition: border-bottom .2s;
+  
+}
+
+.footer-main-nav .active a {
+  color: #ffffff;
+  border-bottom: 3px solid #300034;
+}
+
+.footer-main-nav a:hover {
+  color: #ffffff;
+  border-bottom: 3px solid #300034;
+}
+/* Footer Main Nav Ends*/
+
+/* For Social Media Icons */
+.social-media-icons {
+  padding-top: 50px;
+}
+.social-media-icons li {
+  margin-right: 10px;
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.social-media-icons li a {
+  font-size: 18px;
+}
+
+.facebook::before, .twitter::before, .instagram::before, .youtube::before {
+  border-radius: 50%;
+  color: #300034;
+  float: right;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  text-indent: 0;
+  vertical-align: middle;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.facebook:hover::before {
+  color: #3b5998;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.twitter:hover::before {
+  color: #55acee;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.instagram:hover::before {
+  color: #3f729b;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.youtube:hover::before {
+  color: #cd201f;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.facebook::before {
+  padding: .5px 1px;
+  content: "\f39e";
+}
+
+.twitter::before {
+  padding: .5px .6px;
+  content: "\f099";
+}
+
+.instagram::before {
+  padding: .5px .9px;
+  content: "\f16d";
+}
+
+.youtube::before {
+  padding: .5px .6px;
+  content: "\f167";
+}
+
+.footer-second-part {
+  padding: 10px 0;
+  color: #300034;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Home Footer Ends*/
+
+
+/* ==========================================================================
+   CSS Styling For Club List Page and Match Details Page
+========================================================================== */
+/* Club list container */
+.club-list .container, .match-details .container{
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.club-list main, .match-details main{
+  padding-bottom: 40px;
+}
+/* Club list footer  */
+.club-list footer, .match-details footer{
+  margin-top: auto;
+}
+
+/* Club list header */
+.club-list header, .match-details header{
+  background-color: #300034;
+}
+/* header team match details is styled here */
+.club-team-result h3, .match-details-result h3 {
+  padding-top: 20px;
+}
+/* Selecting is styled here */
+select {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #fb2525;
+  background-color: #300034;
+}
+select:focus {
+  outline: none;
+}
+
+/* load more button is styled here */
+.load-more {
+  display: none;
+  padding: 8px 12px;
+  margin: 0 auto;
+  color: #300034;
+  background-color: #FF005C;
+  border: 1px solid #FF005C;
+  border-radius: 100px;
+  font-weight: 600;
+  text-transform: capitalize;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  margin-bottom: 20px;
+}
+.load-more:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.load-more-details-display {
+  display: block;
+}
+.load-more-details-display:focus {
+  outline: none;
+}
+/* div styling */
+.team-match-details, .match-lists {
+  display: none;
+}
+
+.team-match-details-display, .match-lists-display{
+  display: block;
+  margin: 15px 0;
+}
+
+/* the entire form */
+.club-team-result form, .match-details form{
+  text-align: center;
+}
+
+/* for js */
+.club-list-data, .match-detail-data{
+  padding: 10px 0;
+  border-bottom: 2px solid #300034;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.club-list-data li, .match-detail-data li {
+  width: 25%;
+  font-size: 18px;
+  color: #FF005C;
+  list-style: none;
+}
+/* Css Styling for Club List Page Ends Here*/
+
+/* ==========================================================================
+   CSS Styling For Match Details Page
+========================================================================== */
+
+.team-name {
+  cursor: pointer;
+}
+
+.team-name:hover {
+  text-decoration: underline;
+}
+
+/* Css Styling for Match Details Page Ends here*/
+
+
+
+
+/* Small phones to small tablets: from 768px to 1024px */
+@media only screen and (max-width: 1024px) {
+
+  html {font-size: 50%;}
+  
+  .main-nav .active a, .main-nav .not-active a, .main-nav .logout-btn a {
+      font-size: 20px;
+  }
+  .footer-first-part {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-first-part, .footer-first-part .footer-navigation {
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer-main-nav {
+    font-size: 18px;
+  }
+  .footer-main-nav {
+    align-items: center;
+  }
+  .social-media-icons {
+    padding-top: 0;
+    margin-bottom: 10px;
+  }
+
+}
+
+/* Small phones to small tablets: 767px */
+@media only screen and (max-width: 768px) {
+
+  .container header .wrapper {
+    margin: 0 50px;
+  }
+  .navi-hide {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* header styling */
+  .epl-logo .logo {
+    height: 80px;
+    margin-top: 10px;
+  }
+
+  .navigation .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20% 0 0 30px;
+  }
+  .navigation {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #262626;
+    position: fixed;
+    top: 0;
+    right: -330px;
+    border-radius: 10% 0 0 0;
+    -webkit-transition: right .8s cubic-bezier(1, 0, 0, 1);
+    -o-transition: right .8s cubic-bezier(1, 0, 0, 1);
+    transition: right .8s cubic-bezier(1, 0, 0, 1);
+    z-index: 1;
+  }
+
+  .change  {
+    right: 0;
+  }
+
+  .navigation .main-nav li {
+    margin-bottom: 30px;
+  }
+  .navigation .hamburger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+    text-indent: -99999px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    z-index: 1;
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #FF005C;
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+  }
+
+  .change .line-1 {
+    -webkit-transform: rotateZ(-405deg) translate(-8px, 6px);
+        -ms-transform: rotate(-405deg) translate(-8px, 6px);
+            transform: rotateZ(-405deg) translate(-8px, 6px);
+  }
+
+  .change .line-2 {
+    opacity: 0;
+  }
+
+  .change .line-3 {
+    -webkit-transform: rotateZ(405deg) translate(-8px, -6px);
+        -ms-transform: rotate(405deg) translate(-8px, -6px);
+            transform: rotateZ(405deg) translate(-8px, -6px);;
+  }
+
+  .main-nav .active a, .main-nav .not-active a, .main-nav .logout-btn a{
+    font-size: 18px;
+  }
+
+  .hero-text-box {
+    left: 30%;
+    -webkit-transform: translate(-25%,-10%);
+        -ms-transform: translate(-25%,-10%);
+            transform: translate(-25%,-10%);   
+  }
+
+  .hero-text-box h2 {
+    font-size: 40px;
+  }
+  /* header styling ends here */
+
+  /* main styling done here */
+  /* styling for home main */
+  main {
+    font-size: 15px;
+  }
+  .records h3, .club-team-result h3,  .match-details-result h3{
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .manchester-united, .most-goal-scorer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .manchester-united-image img, .most-goal-scorer-image img {
+    width: 200px;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .manchester-united-stats, .most-goal-scorer-stats{
+    border: none;
+  }
+  .manchester-united-stats ul {
+    padding: 50px 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .most-goal-scorer-image span {
+    font-size: 16px;
+    padding-left: 45px;
+  }
+  .most-goal-scorer-stats p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  /* styling for club list and match details main */
+
+  /* Selecting is styled here */
+  select {
+    font-size: 16px;
+  }
+  .load-more {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  /* for js */
+  .club-list-data, .match-detail-data{
+    padding: 8px 0;
+  }
+
+  .club-list-data li, .match-detail-data li {
+    font-size: 14px;
+  }
+
+  /* footer styling */
+  footer {
+    width: 100%;
+  }
+
+  .container footer .wrapper {
+    margin: 0 10px;
+  }
+
+  footer .footer-first-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  } 
+
+  .footer-first-part, .footer-first-part .footer-navigation {
+    flex-direction: column;
+    align-items: center;
+  } 
+  .footer-navigation {
+    padding: 10px 0 0 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-navigation .epl-logo-footer-black a img {
+    width: 120px;
+    margin-left: 0;
+  }
+
+
+
+  .footer-navigation .footer-main-nav {
+    margin-left: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-navigation .footer-main-nav li a{
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  .social-media-icons {
+    padding-top: 10px;
+  }
+  .social-media-icons li {
+    margin-right: 8px;
+  }
+  .social-media-icons li a {
+    font-size: 15px;
+  }
+  .footer-second-part {
+    font-size: 12px;
+    padding-top: 20px;
+  }
+  /* Remove all hover effect */
+  .login-section input[type = "submit"]:hover {
+    background-color: unset;
+    color: unset;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+  }
+  .main-nav a:hover {
+    color: unset;
+    border: none;
+  }
+  .footer-main-nav a:hover {
+    color: unset;
+    border-bottom: unset;
+  }
+  .facebook:hover::before {
+    color: unset;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+  }
+  .twitter:hover::before {
+    color: unset;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+  }
+  .instagram:hover::before {
+    color: unset;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+  }
+  .youtube:hover::before {
+    color: unset;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+  }
+  .load-more:hover {
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+  }
+  .team-name:hover {
+    text-decoration: unset;
+  }
+}
+
+/* Small phones to small tablets: 420px */
+@media only screen and (max-width: 420px) {
+  .footer-navigation .footer-main-nav {
+    flex-direction: column;
+  }
+  .footer-navigation .footer-main-nav li{
+    margin-bottom: 10px;
+  }
+
+  .footer-navigation .footer-main-nav li a {
+    margin: 0;
+    font-size: 12px;
+  }
+  select {
+    width: 80%; 
+  }
+  option {
+    width: 80%;
+  }
+}
